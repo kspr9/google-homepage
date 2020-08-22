@@ -7,41 +7,64 @@
     <link href="styles/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@500&family=Roboto&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div id="menu">
+<body class="body">
+    <div class="menu">
+        <div></div>
         <div id="all-menu-items">
-            <div id="gmail"></div>
-            <div id="photos"></div>
-            <div id="9dots"></div>
-            <div id="login"></div>
-        </div>
-    </div>
-    <div id="search-form">
-        <form id="the-search-form">
-            <div id="searchform-div-all">
-                <div id="input"></div>
-                <div id="lense"></div>
-                <div id="keyboard"></div>
-                <div id="google-search-btn"></div>
-                <div id="maybe-im-lucky-btn"></div>
-
+            <div id="gmail"><a href="#">Gmail</a></div>
+            <div id="photos"><a href="#">Photos</a></div>
+            <div class="the-nine">
+                <div class="nine-dots"></div>
+                <div class="nine-dots"></div>
+                <div class="nine-dots"></div>
+                <div class="nine-dots"></div>
+                <div class="nine-dots"></div>
+                <div class="nine-dots"></div>
+                <div class="nine-dots"></div>
+                <div class="nine-dots"></div>
+                <div class="nine-dots"></div>
             </div>
-        </form>   
-
-    </div>
-    <div id="main">
-        <div id="body">
-            <div id="top-w-logo">
-                <img src="images/googlelogo_color_272x92dp.png">
-            </div>
-            <div id="search"></div>
-            <div id="lang"></div>
+            <div id="login"><a href="#">Log In</a></div>
         </div>
-        <div id="footer">
-            <div class="fbar">
-                <div class="country-bar"></div>
-                <div id="fleft"></div>
-                <div id="fright"></div>
+
+    </div> 
+
+    <div class="main">
+        <div id="top-w-logo">
+            <p id="p-logo"><img src="images/googlelogo_color_272x92dp.png"></p>
+        </div>
+        <div id="search-form">
+            <form id="the-search-form">
+                <span id="input">
+                    <div id="lense"><img src="images/lense.png"></div>
+                    <input type="text" title="Search" />
+                    <div id="keyboard"><a href="#"><img src="images/keyboard.png"></a></div>
+                </span>
+                <div id="btns">
+                    <div id="google-search-btn"><button type="button" name="search-btn">Search button</button></div>
+                    <div id="maybe-im-lucky-btn"><button type="button" name="lucky-btn">Maybe I'm lucky</button></div>
+                </div>
+            </form>
+            <div id="langs-id">
+                <div id="lang">Google pakkus:   <a href="#">русский</a>   <a href="#">English</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="footer">
+        <div id="country-bar">Estonia</div>
+        <div id="footer-links">
+            <div id="fleft">
+                <a href="#">Reklaamimine</a>
+                <a href="#">Ettevõte</a>
+                <a href="#">Firmast</a>
+                <a href="#">Kuidas otsing töötab?</a>
+            </div>
+            <div id="fright">
+                <a href="#">Privaatsus</a>
+                <a href="#">Tingimused</a>
+                <a href="#">Eelistused</a>
             </div>
         </div>
     </div>
