@@ -10,11 +10,12 @@ html {
 body {
     background-color: white;
     min-height: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
 div {
-/*    border: 1px solid black;
-*/}
+  //  border: 1px solid black;
+}
 
 img {
     
@@ -30,17 +31,48 @@ img {
                     "menu"
                     "main"
                     "footer";
-    grid-template-rows: 50px 1fr 30px;
+    grid-template-rows: 100px 1fr 45px;
 }
 
 /*
 * The TOP Menu elements
 */
 .menu {
+    grid-area: menu;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.nav {
     position: absolute;
     right: 0px;
     top: 0px;
-    grid-area: menu;
+    width: 20em;
+}
+.crumbs ol {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.crumb {
+    display: inline-block;
+}
+
+.crumb img {
+
+}
+
+.crumb a::after {
+    display: inline-block;
+    color: #000;
+    content: '';
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0 3px;
 }
 /*
 ** THE Page stucture - MAIN
@@ -206,7 +238,7 @@ input:focus {
     
 }
 #footer-links {
-    grid-area: "bottom-footer";
+    grid-area: "bottom-footer-a";
 }
 #fright {
     position: absolute;
